@@ -167,7 +167,7 @@ export function StaffDesk({ locationName }: { locationName: string }) {
   }
 
   return (
-    <div className="flex flex-1 flex-col gap-4">
+    <div className="flex w-full flex-col gap-4">
       <div className="terjung-panel rounded-[1.4rem] px-5 py-4 text-center">
         <p className="text-sm font-semibold">{locationName}</p>
       </div>
@@ -176,7 +176,7 @@ export function StaffDesk({ locationName }: { locationName: string }) {
         <>
           {!scanning ? (
             <Button
-              className="h-28 w-full rounded-[1.4rem] text-2xl font-semibold"
+              className="h-28 w-full rounded-[1.4rem] bg-white text-2xl font-semibold text-ink shadow-sm hover:bg-white/90"
               onClick={() => setScanning(true)}
             >
               Scannen
