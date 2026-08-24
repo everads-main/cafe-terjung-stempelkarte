@@ -10,8 +10,8 @@ export function TerjungLogo({
       <img
         src="/terjung-logo.svg"
         alt="Bäckerei Terjung"
-        width={560}
-        height={254}
+        width={700}
+        height={308}
         className="h-auto w-full"
       />
     </div>

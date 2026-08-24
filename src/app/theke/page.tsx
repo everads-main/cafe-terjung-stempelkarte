@@ -19,7 +19,7 @@ export default async function ThekePage() {
   const location = locationById(session.locationId);
 
   return (
-    <main className="auth-screen mx-auto flex w-full max-w-lg flex-1 flex-col px-4 py-6">
+    <main className="auth-screen mx-auto flex min-h-dvh w-full max-w-lg flex-col justify-center px-4 py-6">
       <StaffDesk locationName={location.name} />
     </main>
   );
