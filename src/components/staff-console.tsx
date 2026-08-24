@@ -48,10 +48,8 @@ export function StaffLogin() {
 
   return (
     <div className="paper-card rounded-[1.4rem] p-6">
-      <div className="terjung-panel -mx-6 -mt-6 mb-6 rounded-t-[1.4rem] px-6 py-6">
-        <h1 className="text-3xl font-semibold">Theken-Login</h1>
-        <p className="mt-1 text-sm">Firmen-Handy · QR scannen · 1–10 tippen</p>
-      </div>
+      <p className="text-sm font-medium text-muted-foreground">Theke · Firmen-Handy</p>
+      <h1 className="mt-1 text-2xl font-semibold text-ink">Anmelden</h1>
       <label className="block text-sm font-semibold">Standort</label>
       <div className="mt-2 grid gap-2">
         {LOCATIONS.map((location) => (
@@ -61,8 +59,8 @@ export function StaffLogin() {
             onClick={() => setLocationId(location.id)}
             className={`rounded-xl border px-3 py-3 text-left text-sm font-medium ${
               locationId === location.id
-                ? "border-terjung bg-cream"
-                : "border-border bg-white"
+                ? "border-ink bg-white text-ink ring-1 ring-ink"
+                : "border-border bg-white text-ink"
             }`}
           >
             {location.name}
@@ -75,11 +73,11 @@ export function StaffLogin() {
         maxLength={4}
         value={pin}
         onChange={(event) => setPin(event.target.value.replace(/\D/g, "").slice(0, 4))}
-        className="mt-2 h-12 w-full rounded-xl border border-input bg-cream px-3 tracking-[0.4em]"
+        className="mt-2 h-12 w-full rounded-xl border border-border bg-white px-3 tracking-[0.4em] text-ink"
       />
       {error ? <p className="mt-2 text-sm text-destructive">{error}</p> : null}
       <Button
-        className="mt-4 h-12 w-full text-base font-semibold"
+        className="mt-4 h-12 w-full bg-ink text-base font-semibold text-white hover:bg-ink/90"
         disabled={pending}
         onClick={() => void login()}
       >

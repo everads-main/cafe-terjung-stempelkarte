@@ -55,7 +55,7 @@ export function LoginForm({ nextPath = "/karte" }: { nextPath?: string }) {
             value={username}
             onChange={(event) => setUsername(event.target.value)}
             placeholder="anna_mueller"
-            className="h-12 bg-cream"
+            className="h-12 border-border bg-white text-ink"
           />
         </div>
         <div className="grid gap-1.5">
@@ -73,7 +73,7 @@ export function LoginForm({ nextPath = "/karte" }: { nextPath?: string }) {
       </div>
       {error ? <p className="mt-3 text-sm text-destructive">{error}</p> : null}
       <Button
-        className="mt-5 h-12 w-full text-base font-semibold"
+        className="mt-5 h-12 w-full bg-ink text-base font-semibold text-white hover:bg-ink/90"
         disabled={pending}
         onClick={() => void submit()}
       >
@@ -137,7 +137,7 @@ export function RegisterForm({ nextPath = "/karte" }: { nextPath?: string }) {
             value={username}
             onChange={(event) => setUsername(event.target.value)}
             placeholder="anna_mueller"
-            className="h-12 bg-cream"
+            className="h-12 border-border bg-white text-ink"
           />
         </div>
         <div className="grid gap-1.5">
@@ -155,7 +155,7 @@ export function RegisterForm({ nextPath = "/karte" }: { nextPath?: string }) {
       </div>
       {error ? <p className="mt-3 text-sm text-destructive">{error}</p> : null}
       <Button
-        className="mt-5 h-12 w-full text-base font-semibold"
+        className="mt-5 h-12 w-full bg-ink text-base font-semibold text-white hover:bg-ink/90"
         disabled={pending}
         onClick={() => void submit()}
       >

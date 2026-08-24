@@ -41,7 +41,6 @@ export function GuestCardView({ initial }: { initial: CardState }) {
         </p>
       ) : null}
 
-      {/* Platzhalter für später: Werbung / Aktuelles aus CMS */}
       <section className="rounded-[1.4rem] border border-dashed border-terjung/40 bg-white/70 px-4 py-4">
         <p className="text-xs font-semibold tracking-[0.14em] text-muted-foreground uppercase">
           Aktuelles
@@ -58,7 +57,7 @@ export function GuestCardView({ initial }: { initial: CardState }) {
         onClick={async () => {
           setLeaving(true);
           await fetch("/api/guest/logout", { method: "POST" });
-          router.push("/login");
+          router.push("/kunden");
           router.refresh();
         }}
       >
