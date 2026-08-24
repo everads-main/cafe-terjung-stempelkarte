@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --hostname 0.0.0.0 --port 43173",
-    "build": "next build",
-    "start": "next start --hostname 0.0.0.0 --port 43173",
+    "dev": "next dev --hostname 0.0.0.0 --port 3100",
+    "build": "node scripts/verify-assets.mjs && next build",
+    "start": "next start --hostname 0.0.0.0 --port 3100",
+    "verify:assets": "node scripts/verify-assets.mjs",
     "lint": "eslint",
     "db:push": "drizzle-kit push",
     "db:seed": "tsx --env-file=.env scripts/seed.ts"
