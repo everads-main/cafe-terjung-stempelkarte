@@ -1,1 +1,5 @@
-LOAD_FROM:/workspace/public/terjung-logo.svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" role="img" aria-label="Baeckerei Terjung">
+  <rect width="640" height="240" fill="#ffffff"/>
+  <text x="320" y="72" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="34" font-weight="700" letter-spacing="8" fill="#111111">BÄCKEREI</text>
+  <text x="320" y="175" text-anchor="middle" font-family="Georgia, Brush Script MT, cursive" font-size="78" fill="#ef8017">Terjung</text>
+</svg>
