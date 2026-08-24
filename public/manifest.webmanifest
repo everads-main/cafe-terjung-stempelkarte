@@ -1,11 +1,11 @@
 {
-  "name": "Café Terjung Stempelkarte",
+  "name": "Bäckerei Terjung Stempelkarte",
   "short_name": "Terjung",
   "description": "Virtuelle Kaffeekarte für Café Terjung in Lüdinghausen.",
   "start_url": "/karte",
   "display": "standalone",
-  "background_color": "#FFF4EB",
-  "theme_color": "#E86A17",
+  "background_color": "#ef8017",
+  "theme_color": "#ef8017",
   "lang": "de",
   "icons": [
     {
