@@ -6,11 +6,12 @@ export function TerjungLogo({
 }) {
   return (
     <div className={`overflow-hidden rounded-2xl bg-white p-3 shadow-sm ${className}`}>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/terjung-logo.svg"
+        src="/terjung-logo.jpg"
         alt="Bäckerei Terjung"
-        width={720}
-        height={480}
+        width={800}
+        height={533}
         className="h-auto w-full"
       />
     </div>
