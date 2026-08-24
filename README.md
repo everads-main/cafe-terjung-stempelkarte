@@ -15,9 +15,10 @@ Jeder Gast hat einen **einmaligen, festen** Code (`TJ-…`) in der Datenbank. De
 GitHub: https://github.com/everads-main/cafe-terjung-stempelkarte
 
 ### 2. Vercel-Projekt claimen oder importieren
-- **Claim (schnell):** Temporary-Deploy übernehmen (nur ~60 Min gültig), im Everads-Account eingeloggt:
-  Claim-URL aus dem Agent-Chat / Deploy-Output.
-- **Oder:** Vercel → Add New Project → Import `everads-main/cafe-terjung-stempelkarte` → Region `Frankfurt (fra1)`.
+- **Claim (schnell, zeitlich begrenzt):** im Everads-Account eingeloggt  
+  https://vercel.com/claim-deployment?code=1116f9df-c33f-45f7-897d-dfa9cdc4db66  
+  Details: siehe `DEPLOY.md`
+- **Oder dauerhaft:** Vercel → Add New Project → Import `everads-main/cafe-terjung-stempelkarte` → Region `Frankfurt (fra1)`.
 
 ### 3. Neon-Datenbank
 1. [console.neon.tech](https://console.neon.tech) → Projekt `cafe-terjung` (Region Frankfurt/EU)
