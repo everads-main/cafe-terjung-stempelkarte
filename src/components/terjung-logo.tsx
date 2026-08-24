@@ -1,20 +1,19 @@
-import Image from "next/image";
-
 export function TerjungLogo({
   className = "h-auto w-full max-w-[280px]",
-  priority = false,
 }: {
   className?: string;
   priority?: boolean;
 }) {
   return (
-    <Image
-      src="/terjung-logo.svg"
-      alt="Bäckerei Terjung"
-      width={320}
-      height={120}
-      priority={priority}
-      className={className}
-    />
+    <div className={`overflow-hidden rounded-2xl bg-white p-3 shadow-sm ${className}`}>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/terjung-logo.svg"
+        alt="Bäckerei Terjung"
+        width={900}
+        height={600}
+        className="h-auto w-full"
+      />
+    </div>
   );
 }
