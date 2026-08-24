@@ -12,7 +12,7 @@ export default async function KundenPage() {
 
   return (
     <AuthShell>
-      <div className="grid gap-3">
+      <div className="grid w-full gap-3">
         <Link
           href="/login"
           className="flex h-14 items-center justify-center rounded-[1.2rem] bg-white text-base font-semibold text-ink shadow-sm"
