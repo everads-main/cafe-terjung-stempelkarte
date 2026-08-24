@@ -28,7 +28,7 @@ export default function HowPage() {
           vier Tassen in einem Rutsch. Höchstens acht am Tag, falls irgendwo etwas
           schiefgeht.
         </p>
-        <Link href="/" className="inline-block text-caramel underline-offset-4 hover:underline">
+        <Link href="/kunden" className="inline-block text-terjung underline-offset-4 hover:underline">
           Zur App
         </Link>
       </article>

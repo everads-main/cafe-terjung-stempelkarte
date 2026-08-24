@@ -14,7 +14,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Terjung Karte",
-  description: "Stempelkarte von Café Terjung – zehn Tassen, der nächste ist frei.",
+  description: "Stempelkarte von Bäckerei Terjung – zehn Tassen, der nächste ist frei.",
   applicationName: "Terjung Karte",
   manifest: "/manifest.webmanifest",
   appleWebApp: {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#E86A17",
+  themeColor: "#ef8017",
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
